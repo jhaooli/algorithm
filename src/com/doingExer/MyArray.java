@@ -1,6 +1,6 @@
 package com.doingExer;
 
-public class Shuzu {
+public class MyArray {
 
 	
 	public int removeDuplicates(int[] nums) {
