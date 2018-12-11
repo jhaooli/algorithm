@@ -1,5 +1,8 @@
 package com.doingExer;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *   第一个错误的版本
 你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。
@@ -30,13 +33,26 @@ public class SortAndSearch {
 	 * @param n
 	 * @return
 	 */
-	public int firstBadVersion(int n) {
-		int i = n;
-        for(;i>0;i--) {
-        	if(!isBadVersion(i)) {
-        		return i+1;
-        	}
-        }
-        return i;
-    }
+//	
+//	public int firstBadVersion(int n) {
+//		int i = n;
+//        for(;i>0;i--) {
+//        	if(!isBadVersion(i)) {
+//        		return i+1;
+//        	}
+//        }
+//        return i;
+//    }
+	
+	public static void main(String[] args) {
+		Map<String,Integer> map = new HashMap<>();
+		map.put("A", Integer.valueOf(1));
+		String s = "AAB";
+		char[] ch = s.toCharArray();
+		int res =0;
+		res += map.get("A")*26;
+		System.out.println(res);
+		System.out.println(ch[0]);
+		
+	}
 }

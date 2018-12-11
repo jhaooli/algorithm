@@ -1,4 +1,4 @@
-package com.suanfa;
+package com.algorithm;
 
 import java.util.Scanner;
 
